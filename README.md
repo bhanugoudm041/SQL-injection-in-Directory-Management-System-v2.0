@@ -55,7 +55,7 @@ admin' OR 1='1
 Password field: Any value
 ```
 <img width="3264" height="1162" alt="image" src="https://github.com/user-attachments/assets/7cc346a7-0299-4d6c-8512-1e594dd364f3" />
-<img width="3264" height="1162" alt="image" src="https://github.com/user-attachments/assets/7cc346a7-0299-4d6c-8512-1e594dd364f3" />
+
 
 
 
@@ -63,10 +63,10 @@ Password field: Any value
 The injected SQL condition always evaluates to true, allowing an attacker to bypass authentication and gain administrator-level access without valid credentials.
 
 ### Impact
-Authentication bypass
-Unauthorized administrative access
-Potential full application compromise
-Ability to manipulate or extract sensitive data
+Authentication bypass<\br>
+Unauthorized administrative access<\br>
+Potential full application compromise<\br>
+Ability to manipulate or extract sensitive data<\br>
 
 ### Severity
 High
@@ -75,13 +75,14 @@ High
 Improper handling of user input and lack of prepared statements or input sanitization in SQL queries.
 
 ### Recommended Fix
-Use prepared statements with parameterized SQL queries
-Implement strict input validation
-Avoid direct concatenation of user input into SQL queries
-Disclosure Status
-Vendor did not respond or provide a security contact at the time of disclosure.
+Use prepared statements with parameterized SQL queries<\br>
+Implement strict input validation<\br>
+Avoid direct concatenation of user input into SQL queries<\br>
+
+### Disclosure Status
+Vendor did not respond or provide a security contact at the time of disclosure.<\br>
 
 ### Credit
-Discovered by:
-bhanugoudm041
-Contact: https://github.com/bhanugoudm041
+Discovered by:<\br>
+bhanugoudm041<\br>
+Contact: https://github.com/bhanugoudm041<\br>
