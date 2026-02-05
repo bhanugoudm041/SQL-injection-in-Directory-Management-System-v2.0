@@ -50,7 +50,7 @@ Target: /dms/admin/index.php
 
 Injected Payload (Username field):
 
-admin' OR 1='1
+admin'OR+1='1
 
 Password field: Any value
 ```
@@ -63,10 +63,10 @@ Password field: Any value
 The injected SQL condition always evaluates to true, allowing an attacker to bypass authentication and gain administrator-level access without valid credentials.
 
 ### Impact
-Authentication bypass<\br>
-Unauthorized administrative access<\br>
-Potential full application compromise<\br>
-Ability to manipulate or extract sensitive data<\br>
+Authentication bypass</br>
+Unauthorized administrative access</br>
+Potential full application compromise</br>
+Ability to manipulate or extract sensitive data</br>
 
 ### Severity
 High
@@ -75,14 +75,14 @@ High
 Improper handling of user input and lack of prepared statements or input sanitization in SQL queries.
 
 ### Recommended Fix
-Use prepared statements with parameterized SQL queries<\br>
-Implement strict input validation<\br>
-Avoid direct concatenation of user input into SQL queries<\br>
+Use prepared statements with parameterized SQL queries</br>
+Implement strict input validation</br>
+Avoid direct concatenation of user input into SQL queries</br>
 
 ### Disclosure Status
-Vendor did not respond or provide a security contact at the time of disclosure.<\br>
+Vendor did not respond or provide a security contact at the time of disclosure.
 
 ### Credit
-Discovered by:<\br>
-bhanugoudm041<\br>
-Contact: https://github.com/bhanugoudm041<\br>
+Discovered by:</br>
+bhanugoudm041</br>
+Contact: https://github.com/bhanugoudm041</br>
